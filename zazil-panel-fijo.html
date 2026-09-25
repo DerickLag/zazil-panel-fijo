@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>ZAZIL – Inmovilizar Paneles</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+    }
+
+    /* Encabezado fijo con logo */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #222;
+        color: white;
+        padding: 12px 20px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    header img {
+        height: 100px; /* Ajusta el tamaño del logo aquí */
+    }
+
+    header .titulo {
+        font-size: 22px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    /* Contenido con scroll */
+    main {
+        margin-top: 80px; /* altura del encabezado */
+        padding: 25px;
+        height: calc(100vh - 80px);
+        overflow-y: auto;
+    }
+
+    .bloque {
+        background: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo-zazil.png" alt="logo-zazil.png">
+    <div class="titulo">Catalogo ZAZIL Octubre</div>
+</header>
+
+<main>
+    <div class="bloque">
+        <h2>Sección 1</h2>
+        <p>Contenido largo… instrucciones, fotos, pasos, etc.</p>
+    </div>
+
+    <div class="bloque">
+        <h2>Sección 2</h2>
+        <p>Más contenido… el encabezado nunca se mueve.</p>
+    </div>
+
+    <div class="bloque">
+        <h2>Sección 3</h2>
+        <p>Funciona igual que una app: barra fija arriba, scroll abajo.</p>
+    </div>
+
+    <div class="bloque">
+        <h2>Sección 4</h2>
+        <p>Puedes agregar tantas secciones como quieras.</p>
+    </div>
+</main>
+
+</body>
+</html>
