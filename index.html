@@ -1,219 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>ZAZIL –CATALOGO de productos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo ZAZIL</title>
 
-<style>
-    .whatsapp-flotante {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    background: #25D366;
-    color: white;
-    padding: 14px 20px;
-    border-radius: 50px;
-    font-size: 17px;
-    font-weight: bold;
-    text-decoration: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-    z-index: 9999;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+        }
 
-.whatsapp-flotante:hover {
-    transform: scale(1.07);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.35);
-}
+        /* Encabezado con botón de WhatsApp */
+        header {
+            background: #333;
+            color: white;
+            padding: 15px 20px;
+            font-size: 22px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+        }
 
-    .tarjeta {
-    background: white;
-    padding: 20px;
-    margin-bottom: 25px;
-    border-radius: 14px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    border-left: 6px solid #4CAF50;
-}
+        .btn-whatsapp-header {
+            background: #25D366;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+            transition: transform 0.15s ease;
+        }
 
-.tarjeta img {
-    width: 160px;
-    height: 160px;
-    border-radius: 12px;
-    object-fit: cover;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-}
+        .btn-whatsapp-header:hover {
+            transform: scale(1.05);
+        }
 
-.tarjeta .info {
-    flex: 1;
-}
+        /* Contenido principal */
+        main {
+            padding: 100px 20px 40px;
+            max-width: 500px;
+            margin: auto;
+        }
 
-.tarjeta h2 {
-    margin: 0 0 10px 0;
-    font-size: 22px;
-    color: #222;
-}
+        /* Páginas del catálogo */
+        .pagina {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
 
-.tarjeta p {
-    margin: 6px 0;
-    font-size: 16px;
-}
-
-.precio-normal {
-    color: #555;
-}
-
-.precio-promocion {
-    color: #d32f2f;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.etiqueta-promo {
-    background: #d32f2f;
-    color: white;
-    padding: 4px 10px;
-    border-radius: 6px;
-    font-size: 13px;
-    display: inline-block;
-    margin-bottom: 10px;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
-}
-
-/* Encabezado fijo con logo */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #222;
-    color: white;
-    padding: 12px 20px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
-}
-
-header img {
-    height: 100px;
-}
-
-header .titulo {
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-/* Contenido con scroll */
-main {
-    margin-top: 120px;
-    padding: 25px;
-    height: calc(100vh - 120px);
-    overflow-y: auto;
-}
-
-.bloque {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-</style>
-
+        .pagina img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+    </style>
 </head>
+
 <body>
 
-<header>
-    <img src="logo-zazil.png" alt="logo-zazil">
-    <div class="titulo">Catálogo ZAZIL Octubre</div>
-</header>
+    <!-- Encabezado -->
+    <header>
+        <span>CATÁLOGO ZAZIL</span>
 
-<main>
-    <div class="tarjeta">
-    <img src="FOTO-PRODUCTO.png" alt="Producto ZAZIL">
+        <a class="btn-whatsapp-header"
+           href="https://wa.me/5215528575296?text=Hola%2C%20quiero%20hacer%20un%20pedido%20del%20cat%C3%A1logo%20ZAZIL"
+           target="_blank">
+            WhatsApp
+        </a>
+    </header>
 
-    <div class="info">
-        <h2>NOMBRE DEL PRODUCTO</h2>
+    <!-- Contenido principal -->
+    <main>
 
-        <p class="descripcion">
-            Aquí va la descripción del producto: beneficios, aroma, textura, uso, etc.
-        </p>
+        <div class="pagina"><img src="Diapositiva 1.png"></div>
+        <div class="pagina"><img src="Diapositiva 2.png"></div>
+        <div class="pagina"><img src="Diapositiva 3.png"></div>
+        <div class="pagina"><img src="Diapositiva 4.png"></div>
+        <div class="pagina"><img src="Diapositiva 5.png"></div>
+        <div class="pagina"><img src="Diapositiva 6.png"></div>
+        <div class="pagina"><img src="Diapositiva 7.png"></div>
+        <div class="pagina"><img src="Diapositiva 8.png"></div>
+        <div class="pagina"><img src="Diapositiva 9.png"></div>
+        <div class="pagina"><img src="Diapositiva 10.png"></div>
+        <div class="pagina"><img src="Diapositiva 11.png"></div>
+        <div class="pagina"><img src="Diapositiva 12.png"></div>
+        <div class="pagina"><img src="Diapositiva 13.png"></div>
+        <div class="pagina"><img src="Diapositiva 14.png"></div>
+        <div class="pagina"><img src="Diapositiva 15.png"></div>
+        <div class="pagina"><img src="Diapositiva 16.png"></div>
+        <div class="pagina"><img src="Diapositiva 17.png"></div>
+        <div class="pagina"><img src="Diapositiva 18.png"></div>
+        <div class="pagina"><img src="Diapositiva 19.png"></div>
+        <div class="pagina"><img src="Diapositiva 20.png"></div>
+        <div class="pagina"><img src="Diapositiva 21.png"></div>
+        <div class="pagina"><img src="Diapositiva 22.png"></div>
+        <div class="pagina"><img src="Diapositiva 23.png"></div>
+        <div class="pagina"><img src="Diapositiva 24.png"></div>
+        <div class="pagina"><img src="Diapositiva 25.png"></div>
 
-        <p class="presentacion">
-            <strong>Presentación:</strong> 250 ml / 500 ml / 1 L
-        </p>
-
-        <p class="precio-normal">
-            <strong>Precio normal:</strong> $000</strong>
-        </p>
-
-        <p class="precio-promocion">
-            <span class="etiqueta-promo">PROMO</span>
-            <strong>Precio promoción:</strong> $000</strong>
-        </p>
-    </div>
-</div>
-
-    <div class="bloque">
-        <h2>Sección 1</h2>
-        <p>Contenido largo… instrucciones, fotos, pasos, etc.</p>
-    </div>
-
-    <div class="bloque">
-        <h2>Sección 2</h2>
-        <p>Más contenido… el encabezado nunca se mueve.</p>
-    </div>
-
-    <div class="bloque">
-        <h2>Sección 3</h2>
-        <p>Funciona igual que una app: barra fija arriba, scroll abajo.</p>
-    </div>
-
-    <div class="bloque">
-        <h2>Sección 4</h2>
-        <p>Puedes agregar tantas secciones como quieras.</p>
-    </div>
-    <div class="tarjeta">
-    <img src="dermarcane 2x.png" alt="DERMARCANE 2X">
-
-    <div class="info">
-        <h2>DERMARCANE 2X</h2>
-
-        <p class="descripcion">
-            Filler de ácido hialurónico 24 mg con lidocaína 3 mg. Ideal para tratamientos de volumen, definición y corrección en zonas faciales.
-        </p>
-
-        <p class="presentacion">
-            <strong>Presentación:</strong> Caja con 2 jeringas de 1.1 ml y 4 agujas UTW. Disponible en 3 densidades.
-        </p>
-
-        <p class="precio-normal">
-            <strong>Precio normal:</strong> $1,870
-        </p>
-
-        <p class="precio-promocion">
-            <span class="etiqueta-promo">PROMO</span>
-            <strong>2 cajas por:</strong> $3,660
-        </p>
-    </div>
-</div>
-</main>
-
-    <a href="https://wa.me/5215528575296?text=Hola%2C%20quiero%20hacer%20un%20pedido%20del%20cat%C3%A1logo%20ZAZIL"
-   class="whatsapp-flotante"
-   target="_blank">
-    Pedir por WhatsApp
-</a>
+    </main>
 
 </body>
 </html>
+
